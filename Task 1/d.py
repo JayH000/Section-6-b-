@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-np.random.seed(42)  # Set seed for reproducibility
+np.random.seed(42)  # Seed from b
 
 def simulate_process(mu, sigma, T, dt, N_paths):
     N = int(T / dt)  # Number of time steps
