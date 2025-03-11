@@ -11,6 +11,8 @@ def simulate_process(mu, sigma, T, dt, N_paths):
         dt (float): Time step
         N_paths (int): Number of paths to simulate
     """
+    np.random.seed(42)  # Set seed for reproducibility
+
     N = int(T / dt)  # Number of time steps
     t = np.linspace(0, T, N+1)
     dW = np.sqrt(dt) * np.random.randn(N_paths, N)  # Wiener increments
